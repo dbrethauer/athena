@@ -73,7 +73,7 @@ parser = argparse.ArgumentParser(description=athena_description, epilog=athena_e
 
 # --prob=[name] argument
 pgen_directory = 'src/pgen/'
-bonus_directory = '~/AthenaToKN'
+bonus_directory = '~/AthenaToKN/'
 # set pgen_choices to list of .cpp files in src/pgen/
 pgen_choices = glob.glob(pgen_directory + '*.cpp')
 bonus_choices = glob.glob(bonus_directory+'*/*.cpp')
