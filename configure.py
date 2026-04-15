@@ -76,7 +76,7 @@ pgen_directory = 'src/pgen/'
 bonus_directory = 'home/dbrethauer/AthenaToKN/'
 # set pgen_choices to list of .cpp files in src/pgen/
 pgen_choices = glob.glob(pgen_directory + '*.cpp')
-bonus_choices = glob.glob(bonus_directory+'*.cpp',recursive=True)
+bonus_choices = glob.glob(bonus_directory+'*/*.cpp',recursive=True)
 print(bonus_choices)
 # remove 'src/pgen/' prefix and '.cpp' extension from each filename
 pgen_choices = [choice[len(pgen_directory):-4] for choice in pgen_choices]
