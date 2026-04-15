@@ -73,10 +73,10 @@ parser = argparse.ArgumentParser(description=athena_description, epilog=athena_e
 
 # --prob=[name] argument
 pgen_directory = 'src/pgen/'
-bonus_directory = '$HOME/AthenaToKN/'
+bonus_directory = '~/AthenaToKN/ShockTubeTest/'
 # set pgen_choices to list of .cpp files in src/pgen/
 pgen_choices = glob.glob(pgen_directory + '*.cpp')
-bonus_choices = glob.glob(bonus_directory+'*/*.cpp')
+bonus_choices = glob.glob(bonus_directory+'*.cpp')
 print(bonus_choices)
 # remove 'src/pgen/' prefix and '.cpp' extension from each filename
 pgen_choices = [choice[len(pgen_directory):-4] for choice in pgen_choices]
