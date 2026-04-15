@@ -911,9 +911,9 @@ if args['hdf5']:
     definitions['HDF5_OPTION'] = 'HDF5OUTPUT'
 
     if args['hdf5_path'] != '':
-        makefile_options['PREPROCESSOR_FLAGS'] += ' -I{0}'.format(
+        makefile_options['PREPROCESSOR_FLAGS'] += ' -I{0}/include/hdf5/serial'.format(
             args['hdf5_path'])
-        makefile_options['LINKER_FLAGS'] += ' -L{0}'.format(args['hdf5_path'])
+        makefile_options['LINKER_FLAGS'] += ' -L{0}/lib/x86_64-linux-gnu'.format(args['hdf5_path'])
     if (args['cxx'] == 'g++' or args['cxx'] == 'g++-simd'
             or args['cxx'] == 'cray' or args['cxx'] == 'icpc'
             or args['cxx'] == 'icpx' or args['cxx'] == 'icpx-old'
